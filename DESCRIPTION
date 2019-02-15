@@ -1,0 +1,33 @@
+Package: TraceIdentification
+Title: Identification of Fluorescent Traces in High-Resolution Aerial Images
+Version: 0.0.0.9000
+Authors@R: person("Henning", "Teickner", email = "h_teic01@uni-muenster.de", role = c("aut", "cre"))
+Description: This package provides functions in order to identify fluorescent traces
+  in high-resolution aerial images (e.g. taken with an unmanned aerial system). This package
+  is used in order to analyse data for the publication Teickner et al (2019): Recognize the 
+  little ones: UAS-based in-situ fluorescent tracer detection. doi: ... . The package supports
+  defining and tuning support vector machines or alternatively directed acyclic graph-support vector
+  machines in order to classify aerial images. It helps classifying a set of images, identifies
+  patches of these traces and computes centriods of the respective pixel coordinates.
+Depends: 
+  R (>= 3.4.3),
+  e1071,
+  raster (>= 2.6-7)
+Imports:
+  Rdpack (>= 0.7),
+  EBImage (>= 4.20.1),
+  sinkr (>= 0.6),
+  Hmisc,
+  parallel,
+  doParallel,
+  foreach,
+  caret
+Suggests:
+  knitr
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RdMacros: Rdpack
+RoxygenNote: 6.1.1
+VignetteBuilder: 
+  knitr
